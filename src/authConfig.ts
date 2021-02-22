@@ -3,6 +3,7 @@
 export const msalConfig = {
     auth: {
         clientId:process.env.NEXT_PUBLIC_AAD_CLIENTID,
+        authority: `https://login.microsoftonline.com/${process.env.NEXT_PUBLIC_AAD_SUBSCRIPTION}`,
         redirectUri: "/",
         postLogoutRedirectUri: "/"
     }
