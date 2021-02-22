@@ -1,8 +1,12 @@
+import { AuthenticatedTemplate, UnauthenticatedTemplate} from "@azure/msal-react";
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { SignInButton, SignOutButton } from "../src/LoginControls";
+
 
 export default function Home() {
   return (
+    
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -18,6 +22,18 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
+
+        <AuthenticatedTemplate>
+        <p className={styles.description}>
+        <a href="/profile">Request Profile Information</a>
+        </p>
+        <SignOutButton />
+        </AuthenticatedTemplate>
+
+        <UnauthenticatedTemplate>
+        <SignInButton loginType={"popup"}/>
+        <SignInButton loginType={"redirect"}/>
+        </UnauthenticatedTemplate>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

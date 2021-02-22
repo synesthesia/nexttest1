@@ -650,6 +650,25 @@
   dependencies:
     tslib "^1.8.0"
 
+"@azure/msal-browser@^2.11.2":
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-2.11.2.tgz#de7a3f21fa0ef1e3d634f8f9f6206e4d86b1d07e"
+  integrity sha512-bVqAyfaHgEUhZm4MLtl0Zs6UHuOnXyE1VId2i5NlDQnSXiz3X5UnU8/SwdhrzvxXPO+8vgY2DCMwO+AgFMLI8g==
+  dependencies:
+    "@azure/msal-common" "^4.0.1"
+
+"@azure/msal-common@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-4.0.1.tgz#af71eb5ed72b051f9a9815fbabda5901a53b0f89"
+  integrity sha512-dHdTmLnRpqGasqAUCOzDt9Os8rke1cRk6Mo6yeI0ucis+G/CwLFQ2G08SEdPfZZnvemhTRP0l70UBPax1Gwxmw==
+  dependencies:
+    debug "^4.1.1"
+
+"@azure/msal-react@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-1.0.0-alpha.6.tgz#014ff2ae9df9c58547445927b76ad74b40091e9f"
+  integrity sha512-hXPLl6h5YRO/crAB7kwN4fjxAuFqmwAliHOpTRnUcxPFoR1TJN66EkeaMWaJFW7ABrblJv0e9DlT3RbD0v3GMg==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -1704,6 +1723,13 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
+debug@^4.1.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
+  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
+  dependencies:
+    ms "2.1.2"
+
 decompress-response@^4.2.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/decompress-response/-/decompress-response-4.2.1.tgz#414023cc7a302da25ce2ec82d0d5238ccafd8986"
@@ -2491,6 +2517,11 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+ms@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
+  integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
 ms@^2.1.1:
   version "2.1.3"
