@@ -7,6 +7,8 @@ import Head from 'next/head';
 import { MsalProvider } from "@azure/msal-react";
 import { PublicClientApplication } from "@azure/msal-browser";
 import { msalConfig } from "../src/authConfig";
+import { GroupsContext, GroupsProvider } from '../src/GroupsProvider';
+
 
 function MyApp(props) {
   const { Component, pageProps } = props;
@@ -14,7 +16,9 @@ function MyApp(props) {
   return (
     <>
     <MsalProvider instance={msalInstance}>
-      <Component {...pageProps} />)
+      <GroupsProvider>
+        <Component {...pageProps} />)
+      </GroupsProvider>
     </MsalProvider>
     </>
     )

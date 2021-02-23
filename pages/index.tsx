@@ -2,9 +2,16 @@ import { AuthenticatedTemplate, UnauthenticatedTemplate} from "@azure/msal-react
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { SignInButton, SignOutButton } from "../src/LoginControls";
+import { useClaims } from "../src/useClaims";
+import { useState,  useEffect } from "react";
 
 
 export default function Home() {
+
+  var claims = useClaims();
+
+  useEffect(() => console.log(claims), [claims])
+
   return (
     
     <div className={styles.container}>
@@ -25,7 +32,7 @@ export default function Home() {
 
         <AuthenticatedTemplate>
         <p className={styles.description}>
-        <a href="/profile">Request Profile Information</a>
+        <a href="/profile">Click these words to see User Profile</a>, or...
         </p>
         <SignOutButton />
         </AuthenticatedTemplate>
@@ -52,9 +59,9 @@ export default function Home() {
           >
             <h3>Examples &rarr;</h3>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
+          </a>       
          </div>
+         
       </main>
 
       <footer className={styles.footer}>
